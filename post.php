@@ -18,9 +18,9 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Index HTML</a></li>
-            <li><a href="post-submission.html">Post Submission HTML</a></li>
-            <li><a href="post.html">Post HTML</a></li>
+            <li><a href="index.php">Index PHP</a></li>
+            <li><a href="post-submission.php">Post Submission PHP</a></li>
+            <li><a href="post.php">Post PHP</a></li>
         </ul>
     </nav>
 
@@ -47,7 +47,7 @@
            
                 <h3>See All Posts:</h3>
                 <ul>
-                    <li><a href="post.html">Post HTML</a></li>
+                    <li><a href="post.php">Post PHP</a></li>
                     <li><a href="#">Filler Post</a></li>
                 </ul>
                 
