@@ -311,7 +311,7 @@ input[type=text], select {
 /* Smaller Featured image within post on Post page */
 
 .postFeaturedImage {
-    max-width: 25%;
+    width: 10%;
 }
 
 
