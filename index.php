@@ -1,6 +1,3 @@
-<? php include 'header.php' ?>
-<? php include 'nav.php' ?>
-<? php include 'footer.php' ?>
 
 
 <!DOCTYPE html>
@@ -12,7 +9,7 @@
 </head>
 
 <body>
-     
+  <!-- remove to test PHP include header and nav   
     <header>
         <h1>Hello World</h1>
         <div class="headerArea flex-center">
@@ -28,7 +25,9 @@
             <li><a href="post.php">Post PHP</a></li>
         </ul>
     </nav>
-
+-->
+<?php include 'header.php';?>
+<?php include 'nav.php';?>
 
     <main>
 
@@ -42,15 +41,7 @@
 
     </main>
 
-    <footer>
-       <div>
-           <p>Footer Area</p>
-           <div class="attribution">
-                <p><a href="https://storyset.com/work">Work illustrations by Storyset</a></p>
-            </div>
-        </div>
-    </footer>
-
+<?php include 'footer.php';?>
 
 </body>
 
