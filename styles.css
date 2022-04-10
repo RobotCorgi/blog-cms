@@ -11,6 +11,13 @@ a {
     color:#00257A;
 }
 
+/* Heading resets */
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+}
+
 /* Ensures Form and content stays centered along with flex */
 
 main .formbg {
@@ -238,7 +245,8 @@ input[type=text], select {
     box-shadow: inset 0.1em 0.1em #9999C2;
 }
 
-/* Post page below styles */
+
+/* Post page specific styles */
 
 .fullPost {
     background-color:#E4C8D8;
@@ -258,7 +266,7 @@ input[type=text], select {
     padding: 0.3em;
     margin:0;
 
-   border-radius:0.3em 0.3em 0 0;
+    border-radius:0.3em 0.3em 0 0;
 }
 
 .postInfo {
@@ -266,18 +274,8 @@ input[type=text], select {
     padding:0.3em 0.6em;
 }
 
-/* possibly remove below if specificity of classes is not required for future design 
+/* Adding visual contrast with a background to the post */
 
-.postInfo div {
-    margin:1.6em 0;
-    padding: 0.3em;
-    border: 1px solid blue; 
-
-    border-radius:0.3em;
-
-    background-color: #ffffff;
-}
-*/
 .contrastPostBG {
     background-color:#ffffff;
 
@@ -290,21 +288,36 @@ input[type=text], select {
 
 /*  Detailed CSS selector classes for parts of the post if needed later on in designs */
 
+/* Fix for excess space issue of post with the first item being too low on the page */
+
 .postAuthor {
     margin-top:0.6em;
 } 
+
+/* Adding space to the contents of the post */
 
 .postDatePublished, .postContents {
     margin-top:1.6em;
 }
 
-.postContents p {
+/* Indenting the post contents paragraphs and headings content to keep it aligned */
+
+.postContents p, .postContents h1, .postContents h2, .postContents h3, .postContents h4, .postContents h5, .postContents h6 {
     padding-left:1.6em;
 }
 
 
 
-/* allposts section  */
+/* Smaller Featured image within post on Post page */
+
+.postFeaturedImage {
+    max-width: 25%;
+}
+
+
+
+
+/* See All Posts section  */
 
 .allposts {
     background-color: #F0F7FA;
@@ -332,14 +345,7 @@ input[type=text], select {
     display:inline-block;
 
     padding: 0;
-    margin: .6em 0em;
-   
-    /* 
-    background-color: #D1E8F0;
-    box-shadow:  0.1em 0.1em .1em #46A4C3;
-    border-radius:0.6em;
-    */
-    
+    margin: .6em 0em;   
 } 
 
 .allposts ul li a:hover {
