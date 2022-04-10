@@ -11,7 +11,7 @@
     <header>
         <h1>Hello World</h1>
 
-        <div class="headerArea">
+        <div class="headerArea flex-center">
             <p>Header area</p>
         </div>
     </header>
@@ -28,7 +28,7 @@
 
     <main>
         <h3 class="form-title">Form:</h3>
-        <div class="flex-center">
+        <div class="flex-center formbg">
                        
             <form action="#" method="get">
 
@@ -39,34 +39,41 @@
                 <input type="text" id="author" name="author">
             
                 <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" class="dates">
 
                 <label for="textArea">Textarea Entry Area:</label>
             
-                <textarea id="textArea" name="textArea" rows="7" cols="50">Textarea fill in this content later.</textarea>
+                <textarea name="textArea" rows="7" cols="50" class="textArea">Textarea fill in this content later.</textarea>
 
             <div class="buttons">
                 <button type="submit" value="Submit"class="submits">Submit</button>
 
                 <button type="reset" value="Reset" class="resets">Reset</button>
-            <div>
+            </div>
 
             </form>
         </div>
-
         <div class="allposts">
+           
             <h3>See All Posts:</h3>
             <ul>
                 <li><a href="post.html">Post HTML</a></li>
                 <li><a href="#">Filler Post</a></li>
             </ul>
+            
         </div>
 
-    </main>
+       
 
+
+    </main>  
+    
     <footer>
         <div>
             <p>Footer area</p>
+        </div>
+        <div class="attribution">
+            <p><a href="https://storyset.com/work">Work illustrations by Storyset</a></p>
         </div>
     </footer>
 
