@@ -1,4 +1,4 @@
-
+/* General styles */
 
 body {
 	background-color: #ffffff;
@@ -11,6 +11,8 @@ a {
     color:#00257A;
 }
 
+/* Ensures Form and content stays centered along with flex */
+
 main .formbg {
     margin-left:1.6em;
     margin-right:1.6em;
@@ -22,10 +24,15 @@ header h1 {
     margin-bottom:0em;
 }
 
+/* Header reset */
+
 .headerArea {
     margin:0;
     padding:0;
 }
+
+
+/* Header content reset */
 
 .headerArea p {
     margin: 0.3em 0 0.3em 0;
@@ -34,14 +41,18 @@ header h1 {
 }
 
 
-.form-title {
-display:flex;
-margin:0 auto;
-margin-top:.3em;
-margin-bottom:.3em;
-justify-content: center;
+/* Form title to fix the headings not centering glitch with display flex */
 
+.form-title {
+    display:flex;
+    margin:0 auto;
+    margin-top:.3em;
+    margin-bottom:.3em;
+    justify-content: center;
 }
+
+
+/* Navigation resets and styles */
 
 nav {
     margin:0;
@@ -49,44 +60,49 @@ nav {
 }
 
 nav ul {
+    text-align:center;
+
     background-color: #F5B0CB;
     
     margin:0;
     padding:0;
-    
-
-    text-align:center;
-
-
 }
 
 nav ul li {
     display:inline-block;
     text-align:center;
+
     padding: 0.618em;
 }
 
 nav ul li a {
     display:inline-block;
 
+    text-align:center;
+    text-decoration:none;
+
+    background-color:#fce8f9;
+
     color:#0F0F1A;
 
     padding:0.6em 1.6em 0.6em 1.6em;
     margin: 0.3em 0.6em 0.3em 0.6em;
    
-
-    background-color:#fce8f9;
-
-    text-align:center;
-    text-decoration:none;
-
-
     box-shadow: 0em 0.2em #F17EA8, inset 0.16em 0.16em .06em #FEFBFE;
     border-radius:0.3em;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
 
-/* Comment in CSS */
+    background-color:#E7236A; 
+    
+    color: #ececec;
+    
+    box-shadow: 0 0.16em .06em #A51248;
+}
+
+
 
 /* Form CSS below with inputs and buttons and labels */
 
@@ -94,82 +110,71 @@ nav ul li a {
 
 form input {
     display:block;
-    background-color: #D9D9E8;
-    box-shadow: inset 0.1em 0.1em #9999C2;
 
-   /* pinker bg background-color:#DFA0B9; */
-    
+    background-color: #D9D9E8;
+   
     margin-top:0.1em;
     margin-bottom:0.1em;
-
     padding-top:0.6em;
 
-    /* controls width of the form areas 
-    min-width:35%;
-    max-width: 85%;
-
-    border: 3px solid #CB91A8; */
+    box-shadow: inset 0.1em 0.1em #9999C2;
 }
 
 
-/* Labels for the form */
+
+/* Labels and buttons for the form on Post Submission */
 
 form label {
     display:block;
-    /* Yellow bg for ease of visibility when editing design in CSS background-color: yellow; */
 
     font-weight:bold;
 
     padding-top:0.6em;
-    
-
 }
 
 #date {
-    
-    
     font-weight:bold;
     text-align: center;
-
-    
 }
 
 /* Buttons for the form like submit and reset */
 
 .resets {
-margin-left:1em;
-/* lighter pink background-color:#F5B0CB; 
-background-color: #E94986;
-background-color: #CC668F;
-color: #f2f2f2;*/
+    background-color:#c5c5c5;
 
-background-color:#c5c5c5;
+    border: none;
 
-border: none;
-border-radius: 0.6em;
-box-shadow: inset 0.16em 0.16em #b9b9b9;
+    border-radius: 0.6em;
+
+    margin-left:1em;
+
+    box-shadow: inset 0.16em 0.16em #b9b9b9;
 }
 
 .submits {
     background-color:#0DE761;
-    border: none;
+
+    border: 1px solid #2BF377;
     border-radius: 0.6em;
     box-shadow: inset 0.16em 0.16em .06em #2BF377;
-
 }
 
-
+.submits:hover {
+    background-color:#65F69C; 
+    box-shadow: 0 0.16em .06em #2BF377;
+}
 
 
 .buttons button {
     display: inline-block;
-    text-align: center;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
     
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    text-align: center;
+    text-decoration:underline;
+
     padding-top:0.6em;
     padding-bottom:0.6em;
-    
 }
 
 button {
@@ -178,77 +183,136 @@ button {
     margin-top:0.6em;
 }
 
-/*
- centering the main content parts */
+/* centering the Main part and its contents */
 
 .flex-center {
     display: flex;
+
     justify-content: center;
   }
 
 
-/* test of form css from w3 */
+/* test of form css from w3 to keep contents centered */
 
 input[type=text], select {
+    display: inline-block;
+
     width: 100%;
+
     padding: 0.6em 1em;
     margin: 0.6em 0;
-    display: inline-block;
+
     border: 1px solid #8080B3;
     border-radius: 0.3em;
     box-sizing: border-box;
-  }
-  /*
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    /* padding: 14px 20px;
-    margin: 8px 0; 
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  */
+}
+ 
   
 
   
 
-/* more of my custom code */
+/* Form design on Post Submission page */
 
-  .formbg {
-    border-radius: 0.3em;
+.formbg {
     background-color: #f2f2f2;
+
     padding: 0.3em 0.3em 1em 0.3em;
-    
+
+    border-radius: 0.3em;
   }
 
 .textArea {
-    border-radius:0.6em 0.6em 0em 0.6em;
+    background-color: #D9D9E8;
+    
     padding:0.6em;
     margin-top:0.3em;
-    background-color: #D9D9E8;
+
+    border-radius:0.6em 0.6em 0em 0.6em;
     box-shadow: inset 0.1em 0.1em #9999C2;
 }
 
 .dates {
-    border: none;
-    border-radius:0.3em;
     border: 1px solid #8080B3;
+
+    border-radius:0.3em;
     box-shadow: inset 0.1em 0.1em #9999C2;
 }
 
-.allposts {
-    
+/* Post page below styles */
+
+.fullPost {
+    background-color:#E4C8D8;
 
     margin:0.6em 1.6em 0.6em 1.6em;
-
-    padding:0.6em;
+    padding-top:0;
     
+    box-shadow: inset 0 -0.1em #9999C2; 
+    border-radius:0.6em;
+}
+
+.postTitle {
+    text-align:center;
+    
+    background-color:#F5E0E9;
+
+    padding: 0.3em;
+    margin:0;
+
+   border-radius:0.3em 0.3em 0 0;
+}
+
+.postInfo {
+    margin:0;
+    padding:0.3em 0.6em;
+}
+
+/* possibly remove below if specificity of classes is not required for future design 
+
+.postInfo div {
+    margin:1.6em 0;
+    padding: 0.3em;
+    border: 1px solid blue; 
+
+    border-radius:0.3em;
+
+    background-color: #ffffff;
+}
+*/
+.contrastPostBG {
+    background-color:#ffffff;
+
+    margin:0.6em 0;
+    padding: 0.6em;
+
+    border-radius:0.3em;
+}
+
+
+/*  Detailed CSS selector classes for parts of the post if needed later on in designs */
+
+.postAuthor {
+    margin-top:0.6em;
+} 
+
+.postDatePublished, .postContents {
+    margin-top:1.6em;
+}
+
+.postContents p {
+    padding-left:1.6em;
+}
+
+
+
+/* allposts section  */
+
+.allposts {
     background-color: #F0F7FA;
 
+    margin:0.6em 1.6em 0.6em 1.6em;
+    padding:0.6em; 
+
     border-radius:0.6em;
-    
 }
 
 .allposts h3 {
@@ -256,29 +320,42 @@ input[type=text], select {
 }
 
 .allposts ul  {
-    list-style-type:none;
+    list-style-type:square;
+
     display:block;
+
     margin:0;
-    padding:0;
+    padding: 0 1.6em;
 }
 
 .allposts ul li a {
-
-    padding: 0.6em 3.2em 0.6em 3.2em;
-    margin: .3em 0em;
     display:inline-block;
 
+    padding: 0;
+    margin: .6em 0em;
+   
+    /* 
     background-color: #D1E8F0;
     box-shadow:  0.1em 0.1em .1em #46A4C3;
     border-radius:0.6em;
+    */
     
+} 
 
+.allposts ul li a:hover {
+     color:#0043E0;
 }
+
+
+
+
+
+/* footer area */
 
 footer {
     background-color: #F2F2F8;
 
-    margin:0.3em 1.6em;
+    margin: 0.3em 1.6em 0.3em 1.6em;
     padding:0.3em 0.6em;
 
     border-radius: 0.6em;
@@ -291,17 +368,8 @@ footer p {
 
 .attribution {
     font-size:80%;
-    
 }
 
 .attribution a {
-   /* previous colors testing 
-    color:#D5AFCB;
-    color:#594573; 
-    */
    color: #3B2F75;
-   
-  
 }
-
-
