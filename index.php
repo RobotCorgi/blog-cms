@@ -1,3 +1,8 @@
+<? php include 'header.php' ?>
+<? php include 'nav.php' ?>
+<? php include 'footer.php' ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
