@@ -31,12 +31,25 @@
 
     <main>
 
+<?php
+    function getPostTitlesFromDatabase() {
+        $postTitles = array("Blog Post 1", "Blog Post 2", "Blog Post 3");
+        return $postTitles;
+    }
+?>
+
         <div class="allposts">
             <h3>See All Posts:</h3>
             <ul>
-                <li><a href="post.php">Post PHP</a></li>
-                <li><a href="#">Filler Post</a></li>
-            </ul>
+                <?php
+                    $postTitles = getPostTitlesFromDatabase();
+
+                        foreach($postTitles as $postTitle) {
+                            echo "<li><a href='post.php?title='" . $postTitle . "'>" . $postTitle . "</a></li>";
+                    }
+                ?>
+
+</ul>
         </div>
 
     </main>
